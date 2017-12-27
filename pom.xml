@@ -150,37 +150,6 @@
             </plugin>
 
             <plugin>
-                <groupId>com.mycila</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>2.11</version>
-                <executions>
-                    <execution>
-                        <id>verify-license-headers</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <header>com/mycila/maven/plugin/license/templates/AGPL-3.txt</header>
-                    <properties>
-                        <owner>Open Analytics NV</owner>
-                        <email>info@openanalytics.eu</email>
-                    </properties>
-                    <excludes>
-                        <exclude>${basedir}/README.md</exclude>
-                        <exclude>${basedir}/LICENSE</exclude>
-                        <exclude>${basedir}/src/main/resources/schema/**</exclude>
-                    </excludes>
-                    <mapping>
-                        <raml>SCRIPT_STYLE</raml>
-                        <policy>DOUBLESLASH_STYLE</policy>
-                    </mapping>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.jsonschema2pojo</groupId>
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
                 <version>0.4.11</version>
